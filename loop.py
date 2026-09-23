@@ -17,21 +17,21 @@ t.speed(10)
 #     t.forward(200)
 #     t.left(120)
 
-# def square(x):
+# def squares(x):
 #     for i in range(60):
 #         for i in range(4):
 #             t.forward(x)       
 #             t.left(90)
 #         t.right(5)
-# square(200)
+# squares(200)
 
-sidelength = 100
-rotate = 90
-def square(x,y):
-    for i in range(4):
-        t.forward(x)
-        t.left(y)
-square(200,90)
+# sidelength = 100
+# rotate = 90
+# def square(x,y):
+#     for i in range(4):
+#         t.forward(x)
+#         t.left(y)
+# square(0,90)
 
 # def doublingsquares(irange):
 #     length = (25)
@@ -47,12 +47,28 @@ square(200,90)
 #         length += 25
 # addingsqaures(5)
 
-def sqaurespiral(irange):
+# def sqaurespiral(irange):
+#     length = 5
+#     for i in range(irange):
+#         square (length, 90) 
+#         length += 5
+#         t.right(5)
+# sqaurespiral(60)
+
+sidelength = 100
+rotate = 144
+def star(x,y):
+    for i in range(5):
+        t.left(y)
+        t.forward(x)
+star(0,144)
+
+def sprialstar(irange):
     length = 5
     for i in range(irange):
-        square (length, 90) 
+        star (length,144)
         length += 5
         t.right(5)
-sqaurespiral(60)
+sprialstar(100)
 
 turtle.done()
