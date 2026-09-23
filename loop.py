@@ -69,6 +69,6 @@ def sprialstar(irange):
         star (length,144)
         length += 5
         t.right(5)
-sprialstar(100)
+sprialstar(90)
 
 turtle.done()
